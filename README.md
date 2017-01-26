@@ -20,12 +20,10 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
-  What's For Dinner™?
+  > What's For Dinner™?
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
-   The app that makes your dinner choices for you!
+  > The app that makes your dinner choices for you!
   
 ## Summary ##
   > Are you tired of wasting your precious evenings in indecision about what to make for dinner? We were. So were we. So we built an app that tells us what's for dinner. No more wasted evenings! Just go to the homepage, click the "What's For Dinner™" button, and a recipe is automagically generated for you. Bon apétit!

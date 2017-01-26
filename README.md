@@ -28,29 +28,22 @@ Once the project moves into development, the press release can be used as a touc
    The app that makes your dinner choices for you!
   
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
-  Are you tired of wasting your precious evenings in indecision about what to make for dinner? We were. So were we. So we built an app that tells us what's for dinner. No more wasted evenings! Just go to the homepage, click the "What's For Dinner™" button, and a recipe is automagically generated for you. Bon apétit!
+  > Are you tired of wasting your precious evenings in indecision about what to make for dinner? We were. So were we. So we built an app that tells us what's for dinner. No more wasted evenings! Just go to the homepage, click the "What's For Dinner™" button, and a recipe is automagically generated for you. Bon apétit!
   
 ## Problem ##
-  > Describe the problem your product solves.
-  Wasting time deciding what to make for dinner is a plague on society!  
+  > Wasting time deciding what to make for dinner is a plague on society!  
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
-  Our app makes these difficult life choices for you. 
+  > Our app makes these difficult life choices for you. 
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
-  "We created What's For Dinner™ to help people enjoy their lives without having to worry about What's For Dinner™." -Savy Brandt, Chief Food Webiste Strategist. 
+  > "We created What's For Dinner™ to help people enjoy their lives without having to worry about What's For Dinner™." -Savy Brandt, Chief Food Webiste Strategist. 
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
-  It's as simple as clicking the What's For Dinner™ button, and a delicious recipe appears before your eyes. 
+  > It's as simple as clicking the What's For Dinner™ button, and a delicious recipe appears before your eyes. 
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
-  "I can't believe I was able to function in society before this app. What's For Dinner™: winner, winner, chicken dinner. See what it can do for you!" -- Joe Schmoe, a real customer
+  > "I can't believe I was able to function in society before this app. What's For Dinner™: winner, winner, chicken dinner. See what it can do for you!" -- Joe Schmoe, a real customer
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
-  Let us tell you...What's For Dinner™!
+  > Let us tell you...What's For Dinner™!

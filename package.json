@@ -1,15 +1,8 @@
 {
-  "name": "Whats For Dinner",
-  "version": "1.1.0",
-  "description": "Find whats for food without choosing",
-  "author": "CoonsiderateRacoons",
-  "license": "UNLICENSED",
-  "private": false,
-  "scripts": {
-    "start": "babel . --out-dir compiled --presets=es2015,react --ignore=node_modules,compiled --source-maps inline --watch",
-    "test": "live-server --open=./SpecRunner.html --port=8081",
-    "postinstall": "curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash"
-  },
+  "name": "considerate_raccoons",
+  "version": "1.0.0",
+  "description": "What's For Dinner?",
+  "main": "index.js",
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.2",
     "jquery": "^2.2.1",
@@ -26,5 +19,18 @@
     "chai": "^3.5.0",
     "mocha": "2.3.3",
     "sinon": "1.17.3"
-  }
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaredSpencer/coonsiderate_raccoons.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JaredSpencer/coonsiderate_raccoons/issues"
+  },
+  "homepage": "https://github.com/JaredSpencer/coonsiderate_raccoons#readme"
 }

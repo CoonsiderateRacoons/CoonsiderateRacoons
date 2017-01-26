@@ -1,7 +1,7 @@
 # CoonsiderateRacoons
 What's For Dinner: Greenfield 2017
 
-# Project Name #
+# What's For Dinner?™ #
 
 <!-- 
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.

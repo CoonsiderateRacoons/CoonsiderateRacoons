@@ -1,4 +1,4 @@
 ReactDOM.render(
-  <App />,
+  <App searchRandomRecipes={window.searchRandomRecipes} searchSpecificRecipe={window.searchSpecificRecipe}/>,
   document.getElementById('app')
 );

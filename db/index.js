@@ -11,7 +11,7 @@ var Recipe = sequelize.define('recipe', {
   recipe_id: Sequelize.INTEGER,
 });
 
-var UserRecipe = sequelize.defien('user_recipe' {
+var UserRecipe = sequelize.define('user_recipe' {
   like: Sequelize.BOOLEAN
 })
 

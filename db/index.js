@@ -11,9 +11,9 @@ var Recipe = sequelize.define('recipe', {
   recipe_id: Sequelize.INTEGER,
 });
 
-var UserRecipe = sequelize.define('user_recipe' {
+var UserRecipe = sequelize.define('user_recipe', {
   like: Sequelize.BOOLEAN
-})
+});
 
 User.belongsToMany(Recipe, {through: UserRecipe});
 Recipe.belongsToMany(User, {through: UserRecipe});
@@ -25,5 +25,5 @@ UserRecipe.sync();
 module.exports = {
   User: User,
   Recipe: Recipe,
-  UserRecipe
+  UserRecipe: UserRecipe
 };

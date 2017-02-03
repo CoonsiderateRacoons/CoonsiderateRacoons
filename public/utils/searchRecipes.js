@@ -16,7 +16,7 @@ function searchRandomRecipes (callback) {
 		})
 }
 
-function searchSpecificRecipe (id) {
+function searchSpecificRecipe (callback, id) {
 	axios.get('/specific', {
 		params: {
 			recipe_id: id
@@ -24,7 +24,7 @@ function searchSpecificRecipe (id) {
 	})
 		.then(function(response) {
 			console.log(response.data);
-			return response.data;
+			callback(response.data);
 		})
 		.catch(function(error) {
 			console.log(error);
@@ -32,12 +32,12 @@ function searchSpecificRecipe (id) {
 }
 
 // module.exports.random = searchRandomRecipes;
-// module.exports.specific = searchSpecificRecipe; 
+// module.exports.specific = searchSpecificRecipe;
 window.searchRandomRecipes = searchRandomRecipes;
 window.searchSpecificRecipe = searchSpecificRecipe;
 
 
-// // Make a request for a user with a given ID 
+// // Make a request for a user with a given ID
 // axios.get('/user?ID=12345')
 //   .then(function (response) {
 //     console.log(response);
@@ -45,8 +45,8 @@ window.searchSpecificRecipe = searchSpecificRecipe;
 //   .catch(function (error) {
 //     console.log(error);
 //   });
- 
-// // Optionally the request above could also be done as 
+
+// // Optionally the request above could also be done as
 // axios.get('/user', {
 //     params: {
 //       ID: 12345

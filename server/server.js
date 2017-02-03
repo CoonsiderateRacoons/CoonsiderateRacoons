@@ -11,12 +11,18 @@ app.get('/random', function(req, res) {
   request('http://food2fork.com/api/search?key=cbac066753a4efb0561542a3a5c1a93b', function (err, response, body) { //find a random recipe
     var parsedBody = JSON.parse(response.body);
     var randomInt = Math.floor(Math.random() * 30);
-    console.log('Parsed body: ', parsedBody.recipes[randomInt]);
+    //console.log('Parsed body: ', parsedBody.recipes[randomInt]);
     res.send(JSON.stringify(parsedBody.recipes[randomInt]));
   })
 });
 app.get('/specific', function(req, res) {
-  var rId = req.body.recipe_id || 35382;
+  // console.log('req.body', req.body);
+  // console.log('params', params);
+  // console.log('url', req.url);
+  // var url = req.url.split('=')[1];
+  // console.log('url', url);
+  var rId = req.url.split('=')[1] || 35382;
+  console.log('rId', rId);
   request('http://food2fork.com/api/get?key=cbac066753a4efb0561542a3a5c1a93b&rId=' + rId, function (err, response, body) { //find a specific recipe
     var parsedBody = JSON.parse(response.body);
     console.log('Parsed body: ', parsedBody.recipe);

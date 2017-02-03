@@ -42,12 +42,12 @@ class App extends React.Component {
   }
 
   renderSpecificRecipe() {
-    window.searchSpecificRecipe(this.state.recipe.recipe_id)
-    .then((recipe) => {
-      this.setState({
-        recipe: recipe
-      })
-    })
+    this.props.searchSpecificRecipe(this.changeRecipeState.bind(this), this.state.recipe.recipe_id);
+    // .then((recipe) => {
+    //   this.setState({
+    //     recipe: recipe
+    //   })
+    // })
   }
 
   render() {
@@ -55,8 +55,8 @@ class App extends React.Component {
       <div>
         <button onClick={this.renderRandomRecipe.bind(this)}>What's For Dinner?</button> <br/>
         <RecipeView recipe={this.state.recipe}/> <br/>
-        <button onClick={this.renderSpecificRecipe}>Let's Try It!</button>
-        <button onClick={this.renderRandomRecipe}>Maybe not...</button>
+        <button onClick={this.renderSpecificRecipe.bind(this)}>Let's Try It!</button>
+        <button onClick={this.renderRandomRecipe.bind(this)}>Maybe not...</button>
       </div>
     )
   }

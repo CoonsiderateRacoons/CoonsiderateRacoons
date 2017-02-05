@@ -1,30 +1,16 @@
 var RecipeView = function (props) {
 	return (
-		<div>
-			{console.log(props.recipe)}
-			<h1>
-				{props.recipe.title}
-			</h1>
-			<img src={props.recipe.image_url} />
-			<h2>
-				{props.recipe.ingredients ?
-				'Ingredients:' :
-				''
-				}
-			</h2>
-			<ul>
+		<div className="recipe">
+			<h1 className="recipeTitle">	{props.recipe.title} </h1>
+			<img className="recipeImg" src={props.recipe.image_url} />
+			<h2> {props.recipe.ingredients ? 'Ingredients:' :	''} </h2>
+			<p className="ingredients">
 				{ props.recipe.ingredients ?
 				props.recipe.ingredients.map((ingredient) => {
-				return <li>{ingredient}</li>
-				}) : ''
-			}
-		</ul>
-		<h2>
-			{ props.recipe.ingredients ?
-				<a href={props.recipe.source_url}>Get Directions Here</a>
-				: ''
-			}
-		</h2>
+				return <p>{ingredient}</p>
+				}) : '' }
+			</p>
+			<h2 className="recipeLink"> { props.recipe.ingredients ? <a target="_blank" href={props.recipe.source_url}>See Full Recipe Here!</a> : '' } </h2>
 		</div>
 	)
 };

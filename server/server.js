@@ -2,25 +2,22 @@ var express = require('express');
 // var db = require('../db');
 var parser = require('body-parser');
 var request = require('request');
+var getDinner = require('../public/utils/dinnerSearchFunctions.js');
 
 var app = express();
 app.use(parser.json());
 app.use(express.static('./../public'));
 
+
+
 app.get('/random', function(req, res) {
-  request('http://food2fork.com/api/search?key=cbac066753a4efb0561542a3a5c1a93b', function (err, response, body) { //find a random recipe
+  request('http://food2fork.com/api/search?key=cbac066753a4efb0561542a3a5c1a93b&q=' + "'" + getDinner() + "'" , function (err, response, body) { //find a random recipe
     var parsedBody = JSON.parse(response.body);
     var randomInt = Math.floor(Math.random() * 30);
-    //console.log('Parsed body: ', parsedBody.recipes[randomInt]);
     res.send(JSON.stringify(parsedBody.recipes[randomInt]));
   })
 });
 app.get('/specific', function(req, res) {
-  // console.log('req.body', req.body);
-  // console.log('params', params);
-  // console.log('url', req.url);
-  // var url = req.url.split('=')[1];
-  // console.log('url', url);
   var rId = req.url.split('=')[1] || 35382;
   console.log('rId', rId);
   request('http://food2fork.com/api/get?key=cbac066753a4efb0561542a3a5c1a93b&rId=' + rId, function (err, response, body) { //find a specific recipe

@@ -4,6 +4,8 @@
 
 body {
 	background-image: url('images/Kitchen-Background-51523612.jpg');
+	background-repeat: repeat-y;
+	background-size: 100%;
 }
 
 .subButton {

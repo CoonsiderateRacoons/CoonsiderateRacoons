@@ -19,7 +19,7 @@ body {
 	text-shadow: 1px 1px #C1C0C0;
 	margin: 20px;
 	box-shadow: 2px 2px 10px black;
-  border-radius: 20px;
+  	border-radius: 20px;
 }
 
 .subButtons {
@@ -37,25 +37,25 @@ body {
 	font-weight: thin;
 	font-family: 'Oregano';
 	width: 1200px;
-  position: relative;
-  margin: auto;
-  border-radius: 10px;
-  padding: 20px;
+ 	position: relative;
+  	margin: auto;
+  	border-radius: 10px;
+  	padding: 20px;
 }
 
 .mainButton {
 	background-image: url('images/dinner.png');
 	background-size: cover;
-  background-repeat: no-repeat;
-  height: 350px;
-  width: 350px;
-  box-shadow: 2px 2px 10px black;
-  border-radius: 60px;
-  position: relative;
-  margin: auto;
-  text-align: center;
-  display: block;
-  cursor: pointer;
+  	background-repeat: no-repeat;
+  	height: 350px;
+  	width: 350px;
+  	box-shadow: 2px 2px 10px black;
+  	border-radius: 60px;
+  	position: relative;
+  	margin: auto;
+  	text-align: center;
+  	display: block;
+  	cursor: pointer;
 }
 
 .recipe {

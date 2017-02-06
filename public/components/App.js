@@ -1,8 +1,6 @@
-
 class App extends React.Component {
   constructor(props) {
     super(props)
-
     this.state = {
       recipe: {
         image_url: null
@@ -34,7 +32,6 @@ class App extends React.Component {
       </div>
     )
   }
-
 };
 
 

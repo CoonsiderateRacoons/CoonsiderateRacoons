@@ -1,19 +1,19 @@
 // var axios = require('axios');
 
 var instance = axios.create({
-  baseURL: '127.0.0.1:3000',
+ 	baseURL: '127.0.0.1:3000',
 });
 
 
 function searchRandomRecipes (callback) {
 	axios.get('/random')
-		.then(function(response) {
-			console.log(response.data);
-			callback(response.data);
-		})
-		.catch(function(error) {
-			console.log(error);
-		})
+	.then(function(response) {
+		console.log(response.data);
+		callback(response.data);
+	})
+	.catch(function(error) {
+		console.log(error);
+	})
 }
 
 function searchSpecificRecipe (callback, id) {
@@ -22,13 +22,13 @@ function searchSpecificRecipe (callback, id) {
 			recipe_id: id
 		}
 	})
-		.then(function(response) {
-			console.log(response.data);
-			callback(response.data);
-		})
-		.catch(function(error) {
-			console.log(error);
-		})
+	.then(function(response) {
+		console.log(response.data);
+		callback(response.data);
+	})
+	.catch(function(error) {
+		console.log(error);
+	})
 }
 
 // module.exports.random = searchRandomRecipes;
